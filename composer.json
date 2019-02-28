@@ -1,0 +1,29 @@
+{
+  "name": "yangzie/aliyun-oss",
+  "description": "aliyun oss",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "yangzie",
+      "email": "yangzie@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "league/flysystem": "~1.0",
+    "aliyuncs/oss-sdk-php": "~2.2.1"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Yangzie\\AliyunOss\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Yangzie\\AliyunOss\\AliyunOssServiceProvider"
+      ]
+    }
+  }
+}
